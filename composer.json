@@ -1,0 +1,22 @@
+{
+    "name": "marcwitteveen/vwo",
+    "description": "Simple PHP helper functions for implementing Visual Website Optimizer within your website.",
+    "keywords": ["vwo","visual website optimizer"],
+    "homepage": "https://github.com/marcwitteveen/vwo/",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Marc Witteveen",
+            "email": "marc.witteveen@gmail.com",
+            "homepage": "https://marcwitteveen.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "MarcWitteveen\\Vwo\\": "src"
+        }
+    }
+}
