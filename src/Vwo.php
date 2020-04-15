@@ -25,12 +25,12 @@ class Vwo {
 	 * @param boolean $useExistingJquery If set to true then jQuery included in the page will be used
 	 * @return string The generated HTML code
 	 */
-	public static function asynchronous($account_id = "", $enabled = false, $settingsTolerance = 2000, $libraryTolerance = 2500, $useExistingJquery = false)
+	public static function asynchronous($accountId = "", $enabled = false, $settingsTolerance = 2000, $libraryTolerance = 2500, $useExistingJquery = false)
 	{
 		$output = "<!-- Start VWO Async Smartcode -->\r\n";
 		$output .= "<script type='text/javascript'>\r\n";
 		$output .= "window._vwo_code = window._vwo_code || (function(){\r\n";
-		$output .= sprintf("var account_id=%d,\r\n", $account_id);
+		$output .= sprintf("var account_id=%d,\r\n", $accountId);
 		$output .= sprintf("settings_tolerance=%d,\r\n", $settingsTolerance);
 		$output .= sprintf("library_tolerance=2500,\r\n", $libraryTolerance);
 		$output .= sprintf("use_existing_jquery=%s,\r\n", ($useExistingJquery)?"true":"false");
