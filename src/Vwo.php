@@ -57,7 +57,7 @@ class Vwo {
 	public static function synchronous($accountId = "", $enabled = false) 
 	{
 		$output = "<!-- Start VWO Smartcode -->\r\n";
-		$outpuy .= sprintf("<script src='https://dev.visualwebsiteoptimizer.com/lib/%s.js'></script>\r\n", $accountId);
+		$output .= sprintf("<script src='https://dev.visualwebsiteoptimizer.com/lib/%s.js'></script>\r\n", $accountId);
 		$output .= "<!-- End VWO Smartcode -->\r\n";
 
 		if (!empty($accountId) && $enabled) {
