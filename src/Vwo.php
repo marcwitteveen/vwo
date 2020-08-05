@@ -28,7 +28,7 @@ class Vwo {
 	public static function asynchronous($accountId = "", $enabled = false, $settingsTolerance = 2000, $libraryTolerance = 2500, $useExistingJquery = false)
 	{
 		$output = "<!-- Start VWO Async Smartcode -->\r\n";
-		$output .= "<script type='text/javascript'>\r\n";
+		$output .= "<script data-cfasync='false' type='text/javascript'>\r\n";
 		$output .= "window._vwo_code = window._vwo_code || (function(){\r\n";
 		$output .= sprintf("var account_id=%d,\r\n", $accountId);
 		$output .= sprintf("settings_tolerance=%d,\r\n", $settingsTolerance);
